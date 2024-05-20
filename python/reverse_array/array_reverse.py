@@ -1,3 +1,4 @@
+# This solution will use an extra array to store the results
 def reverse_array_extra_array(arr):
     reversed_array = arr[::-1] # start from the end and move backwards
     
