@@ -1,4 +1,4 @@
-def reverse_array_using_builtins (arr):
+def reverse_array_using_builtins(arr):
     [print(a, end=" ") for a in list(reversed(arr))]
     print() # removes the percent sign from the end of the string
     
