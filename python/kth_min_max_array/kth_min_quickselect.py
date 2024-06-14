@@ -1,7 +1,20 @@
 import random
 
 def partition(arr, left, right):
-    # Choose a random pivot index between left and right
+    """
+    A function that partitions the array based on a random pivot element.
+    
+    Parameters:
+        arr (list): The input array to be partitioned.
+        left (int): The starting index of the sub-array to be partitioned.
+        right (int): The ending index of the sub-array to be partitioned.
+    
+    Returns:
+        int: The index where the pivot element is placed after partitioning.
+        
+    Time complexity: O(n), where n is the length of the input array.
+    Space complexity: O(1), as only constant extra space is used.
+    """
     pivot_index = random.randint(left, right)
     pivot = arr[pivot_index]
     # Move pivot to the end of the array
