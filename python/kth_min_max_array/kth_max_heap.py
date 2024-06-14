@@ -10,6 +10,9 @@ def kth_max_element(arr, k):
 
     Returns:
     int: The kth largest element in the array.
+
+    Time complexity: O(nlogk), where n is the length of the input array.
+    Space complexity: O(k), where k is the position of the largest element to find.
     """
     heapq.heapify(arr)
     

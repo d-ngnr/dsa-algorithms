@@ -56,6 +56,9 @@ def remove_element(nums, val):
     
     Returns:
     int: The number of elements in nums that are not equal to the given value.
+    
+    Time complexity: O(n), where n is the length of the input array.
+    Space complexity: O(1), as only constant extra space is used.
     """
     for j in range(len(nums)):
         if nums[j] != val:
