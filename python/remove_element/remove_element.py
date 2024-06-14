@@ -1,3 +1,4 @@
+"""
 # Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
 # The order of the elements may be changed. 
 # Then return the number of elements in nums which are not equal to val.
@@ -43,9 +44,19 @@
 # 0 <= nums.length <= 100
 # 0 <= nums[i] <= 50
 # 0 <= val <= 100
+"""
 
 def remove_element(nums, val):
-    k = 0
+    """
+    A function to remove all occurrences of a given value in an integer array in-place.
+    
+    Parameters:
+    nums (List[int]): The input integer array.
+    val (int): The value to be removed from the array.
+    
+    Returns:
+    int: The number of elements in nums that are not equal to the given value.
+    """
     for j in range(len(nums)):
         if nums[j] != val:
             nums[k] = nums[j]
