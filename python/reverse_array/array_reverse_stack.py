@@ -1,3 +1,4 @@
+from inspect import stack
 def reverse_array_using_stack(arr):
     """
     Reverses the given array using a stack.

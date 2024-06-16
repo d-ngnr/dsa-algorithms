@@ -1,5 +1,5 @@
 # This solution will use an extra array to store the results
-def reverse_array_extra_array(arr):
+def reverse_array_extra_array(reversed_array):
     """
     Reverses the given array using an extra array and prints the reversed array.
 
