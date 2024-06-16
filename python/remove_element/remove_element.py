@@ -69,4 +69,6 @@ def remove_element(nums, val):
 
 nums = [0,1,2,2,3,0,4,2]
 val = 2
-print(remove_element(nums, val))
+new_size=remove_element(nums, val)
+print(new_size) # print
+print(nums[:new_size]) # print
