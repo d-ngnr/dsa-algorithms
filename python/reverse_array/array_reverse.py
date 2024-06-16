@@ -1,17 +1,6 @@
 # This solution will use an extra array to store the results
-def reverse_array_extra_array(reversed_array):
-    """
-    Reverses the given array using an extra array and prints the reversed array.
-
-    Parameters:
-        arr (list): The array to be reversed.
-
-    Returns:
-        None
-
-    Time complexity: O(n), where n is the length of the input array.
-    Space complexity: O(n), as an extra array is used to store the reversed elements.
-    """
+def reverse_array_extra_array(arr):
+    reversed_array = arr[::-1] # start from the end and move backwards
     
     print("Reversed array:", end=" ") # print without moving to the next line
     for i in reversed_array:

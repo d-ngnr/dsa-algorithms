@@ -1,17 +1,5 @@
-from inspect import stack
 def reverse_array_using_stack(arr):
-    """
-    Reverses the given array using a stack.
-
-    Parameters:
-        arr (list): The array to be reversed.
-
-    Returns:
-        None
-
-    Time complexity: O(n), where n is the length of the input array.
-    Space complexity: O(n), as extra space is used to store elements in the stack.
-    """
+    stack = []
     
     for element in arr:
         stack.append(element)
