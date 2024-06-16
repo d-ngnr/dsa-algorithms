@@ -69,4 +69,6 @@ def remove_duplicates(nums):
     return i + 1                  # return the length of the array
 
 nums = [0,0,1,1,1,2,2,3,3,4]
-print(remove_duplicates(nums))
+new_size=remove_duplicates(nums)
+print(new_size)
+print(nums[:new_size])
