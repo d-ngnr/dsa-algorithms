@@ -42,23 +42,23 @@ def merge_sorted_array(nums1, m, nums2, n):
     Time complexity: O(m + n), where m and n are the lengths of nums1 and nums2 respectively.
     Space complexity: O(1), as only constant extra space is used.
     """
-    nums3 = []
+    nums3 = []  # initialize an empty list to store the merged array
     
-    while i < m and j < n:
-        if nums1[i] < nums2[j]:
-            nums3.append(nums1[i])
-            i += 1
-        else:
-            nums3.append(nums2[j])
-            j += 1
+    while i < m and j < n:          # compare elements of nums1 and nums2
+        if nums1[i] < nums2[j]:     # if nums1[i] is less than nums2[j]
+            nums3.append(nums1[i])  # append nums1[i] to the merged array
+            i += 1                  # increment i
+        else:                       # if nums1[i] is greater than nums2[j]
+            nums3.append(nums2[j])  # append nums2[j] to the merged array
+            j += 1                  # increment j
     
-    if i < m:
-        nums3.extend(nums1[i:])
+    if i < m:                       # if i is less than length of nums1
+        nums3.extend(nums1[i:])     # add all remaining elements of nums1 to the merged array
         
-    if j < n:
-        nums3.extend(nums2[j:])
+    if j < n:                       # if j is less than length of nums2
+        nums3.extend(nums2[j:])     # add all remaining elements of nums2 to the merged array
         
-    return nums3
+    return nums3                    # return the merged array
         
 nums1 = [1,2,3,0,0,0]
 m = 3

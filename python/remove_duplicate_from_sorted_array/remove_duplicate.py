@@ -61,11 +61,11 @@ def remove_duplicates(nums):
     Time complexity: O(n), where n is the length of the input array.
     Space complexity: O(1), as only constant extra space is used.
     """
-    for j in range(1, len(nums)):
-        if nums[j] != nums[i]:
-            i += 1
-            nums[i] = nums[j]
-    return i + 1
+    for j in range(1, len(nums)): # start from the second element
+        if nums[j] != nums[i]:    # if the current element is not equal to the previous element
+            i += 1                # increment the index
+            nums[i] = nums[j]     # swap the current element with the previous element
+    return i + 1                  # return the length of the array
 
 nums = [0,0,1,1,1,2,2,3,3,4]
 print(remove_duplicates(nums))

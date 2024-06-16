@@ -60,11 +60,11 @@ def remove_element(nums, val):
     Time complexity: O(n), where n is the length of the input array.
     Space complexity: O(1), as only constant extra space is used.
     """
-    for j in range(len(nums)):
-        if nums[j] != val:
-            nums[k] = nums[j]
-            k += 1
-    return k
+    for j in range(len(nums)): # start from the first element
+        if nums[j] != val:     # if the current element is not equal to the given value
+            nums[k] = nums[j]  # swap the current element with the previous element
+            k += 1             # increment the index
+    return k                   # return the index
 
 nums = [0,1,2,2,3,0,4,2]
 val = 2
