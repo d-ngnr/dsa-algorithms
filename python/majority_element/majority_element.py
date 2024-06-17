@@ -22,8 +22,8 @@ def majority_element(arr):
         >>> majority_element([2, 2, 1, 1, 1, 2, 2])
         2
     """
-    majority = 0
-    count = 0
+    majority = 0                    # initialize the majority element   
+    count = 0                       # initialize the count
     for i in range(len(arr)):       # start from the first element
         if count == 0:              # if the count is zero
             majority = arr[i]       # update the majority element
