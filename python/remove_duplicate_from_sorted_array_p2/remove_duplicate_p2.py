@@ -9,4 +9,4 @@ def remove_duplicates_p2(nums):
 nums = [1,1,1,2,2,3,3,4,4,4,5]
 new_size=remove_duplicates_p2(nums)
 print(new_size)
-print(nums[:new_size])
+print(nums[:new_size]) # Output: [1,2,3,4,5]
