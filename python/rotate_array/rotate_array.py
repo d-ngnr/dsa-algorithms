@@ -23,4 +23,4 @@ def rotate_array(arr, k):
 
 nums = [1,2,3,4,5,6,7] 
 k = 3
-print(rotate_array(nums, k))
+print(rotate_array(nums, k)) # Output: [5,6,7,1,2,3,4]

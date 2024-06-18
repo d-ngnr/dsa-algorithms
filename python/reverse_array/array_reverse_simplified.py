@@ -7,4 +7,4 @@ def simplified_reverse_array(arr):
     print()  # Add a newline at the end of the function
         
 original_array = [1,2,3,4,5,6,7,8,9]
-simplified_reverse_array(original_array)
+simplified_reverse_array(original_array) # Output: 9 8 7 6 5 4 3 2 1

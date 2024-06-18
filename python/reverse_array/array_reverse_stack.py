@@ -10,5 +10,5 @@ def reverse_array_using_stack(arr):
         
 original_array = [1,2,3,4,5,6,7,8,9]
 reverse_array_using_stack(original_array)
-[print(a, end=" ") for a in original_array]
+[print(a, end=" ") for a in original_array] # Output: 9 8 7 6 5 4 3 2 1
 print()
