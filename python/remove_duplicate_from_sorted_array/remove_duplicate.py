@@ -71,4 +71,4 @@ def remove_duplicates(nums):
 nums = [0,0,1,1,1,2,2,3,3,4]
 new_size=remove_duplicates(nums)
 print(new_size)
-print(nums[:new_size])
+print(nums[:new_size]) # Output: [0,1,2,3,4]

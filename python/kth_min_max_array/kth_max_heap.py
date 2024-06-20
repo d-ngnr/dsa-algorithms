@@ -23,4 +23,4 @@ def kth_max_element(arr, k):
     
 arr = [7, 10, 4, 3, 20, 15]
 k = 3
-print(kth_max_element(arr, k))
+print(kth_max_element(arr, k)) # Output: 7

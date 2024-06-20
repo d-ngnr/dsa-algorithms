@@ -16,4 +16,4 @@ def kth_min_element(arr, k):
 
 arr = [7, 10, 4, 3, 20, 15]
 k = 3
-print(kth_min_element(arr, k))
+print(kth_min_element(arr, k)) # Output: 3

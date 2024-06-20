@@ -34,4 +34,4 @@ def majority_element(arr):
     return majority
 
 arr=[2,2,1,1,1,2,2]
-print(majority_element(arr))
+print(majority_element(arr)) # Output: 2
