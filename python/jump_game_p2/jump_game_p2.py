@@ -21,7 +21,7 @@ def jump_p2(arr):
     current_end = 0              # current end of the jump
     furthest = 0                 # furthest position that can be reached
     
-    for i in range(len(arr) - 1):               # start from the first element
+    for i in range(len(arr) - 1):               # start from the first element up to the last element
         furthest = max(furthest, i + arr[i])    # update the furthest position
         if i == current_end:                    # if the current end is reached
             jumps += 1                          # increment the number of jumps
