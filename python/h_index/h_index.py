@@ -15,7 +15,7 @@ def find_h_index(arr):
     If the current element is greater than or equal to the number of elements left, it returns the h-index.
     If no element satisfies the condition, it returns 0.
     """
-    arr.sort()
+    arr.sort()              # sort the array in ascending order
     n = len(arr)            # number of elements in the array
     
     for i in range(n):      # iterate over the array
