@@ -1,9 +1,9 @@
-def longestCommonPrefix(self, prefix):
+def longestCommonPrefix(prefix):
     """
     :type strs: List[str]
     :rtype: str
     """
-    for i in range(len(prefix[0])):
+    for i in range(len(prefix[0])):                     
         for s in prefix:
             if i == len(s) or s[i] != prefix[0][i]:
                 return prefix[0][:i]
