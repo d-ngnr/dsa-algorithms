@@ -1,4 +1,16 @@
 def bubble_sort(unordered_list):
+    """
+    Sorts an unordered list using the bubble sort algorithm.
+
+    Parameters:
+    - unordered_list (list): The list to be sorted.
+
+    Returns:
+    - list: The sorted list in ascending order.
+
+    Time complexity: O(n^2), where n is the number of elements in the list.
+    Space complexity: O(1), as no extra space is used.
+    """
     size = len(unordered_list)
     for i in range(size):
         for j in range(0, size - i - 1):
