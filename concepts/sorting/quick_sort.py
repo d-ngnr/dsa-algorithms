@@ -1,4 +1,16 @@
 def quicksort(arr):
+    """
+    Sorts an array using the quicksort algorithm.
+
+    Parameters:
+        arr (list): The input list to be sorted.
+
+    Returns:
+        list: A sorted list in ascending order.
+
+    Time complexity: O(n log(n)), where n is the length of the input list.
+    Space complexity: O(log(n)), as only constant extra space is used.
+    """
     if len(arr) <= 1:
         return arr
     else:
