@@ -14,4 +14,8 @@ def count_occurences(arr, queries):
 arr = [1, 2, 1, 3, 2]
 queries = [1, 3, 4, 2, 10]
 
+string = "abcdabefc"
+stringQueries = ['a','c','z']
+
 count_occurences(arr, queries)
+count_occurences(string, stringQueries)
