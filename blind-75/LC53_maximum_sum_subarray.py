@@ -1,4 +1,4 @@
-def maximum_subarray_sum(arr):
+def maximum_sum_subarray(arr):
     max_sum = float('-inf')
     current_sum = 0
     
@@ -10,4 +10,4 @@ def maximum_subarray_sum(arr):
 
 # Example usage
 arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-print(maximum_subarray_sum(arr))  # Output: 6
+print(maximum_sum_subarray(arr))  # Output: 6
