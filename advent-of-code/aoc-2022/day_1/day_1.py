@@ -45,21 +45,27 @@ def parse_input(filename: str) -> List[str]:
 
 def solve_part1(data: List[str]) -> int:
     current_sum = 0
-    current_max = 0
+    elf_id = 0
+    group_sums = {}
     
     for line in data:
         line = line.strip()
         
         if line == '':
-            if current_sum > current_max:
-                current_max = current_sum
+            if current_sum > 0:
+                elf_id = elf_id + 1
+                group_sums[elf_id] = current_sum
                 current_sum = 0
         else:
             current_sum += int(line)
     
-    return current_max
+    if current_sum > 0:
+        group_sums[elf_id + 1] = current_sum
     
-
+    max_key = max(group_sums, key=group_sums.get)
+    
+    return max_key
+    
 def solve_part2(data: List[str]) -> int:
     # Implement solution for part 2
     pass
@@ -70,7 +76,7 @@ def run_tests():
         '2000',
         '3000',
         '',
-        '4000'
+        '4000',
         '',
         '5000',
         '6000',
@@ -81,7 +87,7 @@ def run_tests():
         '',
         '10000'
     ]
-    assert solve_part1(test_data) == 24000, "Part 1 test failed"
+    assert solve_part1(test_data) == 4, "Part 1 test failed"
     # assert solve_part2(test_data) == 42, "Part 2 test failed"
     print("All tests passed!")
 
@@ -92,8 +98,8 @@ if __name__ == "__main__":
     #     print("Usage: python solution.py <input_file>")
     #     sys.exit(1)
     
-    # input_data = parse_input(sys.argv[1])
-    # print(f"Part 1 solution: {solve_part1(input_data)}")
+    input_data = parse_input(sys.argv[1])
+    print(f"Part 1 solution: {solve_part1(input_data)}")
     # print(f"Part 2 solution: {solve_part2(input_data)}")
         
         
