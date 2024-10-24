@@ -62,9 +62,9 @@ def solve_part1(data: List[str]) -> int:
     if current_sum > 0:
         group_sums[elf_id + 1] = current_sum
     
-    max_key = max(group_sums, key=group_sums.get)
+    max_calories = max(group_sums.values())
     
-    return max_key
+    return max_calories
     
 def solve_part2(data: List[str]) -> int:
     # Implement solution for part 2
@@ -87,7 +87,7 @@ def run_tests():
         '',
         '10000'
     ]
-    assert solve_part1(test_data) == 4, "Part 1 test failed"
+    assert solve_part1(test_data) == 24000, "Part 1 test failed"
     # assert solve_part2(test_data) == 42, "Part 2 test failed"
     print("All tests passed!")
 
