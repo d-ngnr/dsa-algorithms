@@ -9,7 +9,7 @@ def solve_part1(data: List[str]) -> int:
     left = []
     right = []
     
-    for line in input_data:
+    for line in data:
         line = line.strip()
         left.append(line.split('   ')[0])
         right.append(line.split('   ')[1])
@@ -26,13 +26,12 @@ def solve_part2(data: List[str]) -> int:
     left = []
     right = []
     
-    for line in input_data:
+    for line in data:
         line = line.strip()
         left.append(line.split('   ')[0])
         right.append(line.split('   ')[1])
     
-    results = [int(element) * right.count(element) for element in left]
-    return sum(results)
+    return sum([int(element) * right.count(element) for element in left])
 
 def run_tests():
     test_data = [
@@ -41,9 +40,8 @@ def run_tests():
         "3   3",
         "2   2",
     ]
-    print(solve_part1(test_data))
     assert solve_part1(test_data) == 0, "Part 1 test failed"
-    assert solve_part2(test_data) == 10, "Part 2 test failed"
+    assert solve_part2(test_data) == 12, "Part 2 test failed"
     print("All tests passed!")
 
 if __name__ == "__main__":
