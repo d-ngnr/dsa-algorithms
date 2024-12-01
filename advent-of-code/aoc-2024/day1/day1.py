@@ -28,8 +28,8 @@ def solve_part2(data: List[str]) -> int:
     
     for line in data:
         line = line.strip()
-        left.append(line.split('   ')[0])
-        right.append(line.split('   ')[1])
+        left.append(line.split()[0])
+        right.append(line.split()[1])
     
     return sum([int(element) * right.count(element) for element in left])
 
