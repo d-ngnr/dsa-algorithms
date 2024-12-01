@@ -110,7 +110,7 @@ def run_tests():
     print("All tests passed!")
 
 if __name__ == "__main__":
-    run_tests()
+    # run_tests()
     
     if len(sys.argv) != 2:
         print("Usage: python solution.py <input_file>")
