@@ -4,7 +4,8 @@ def two_sum(nums, target):
     for i, n in enumerate(nums):
         diff = target - n
         if diff in prevValues:
-            return [prevValues[diff], i]
+            # return [prevValues[diff], i] # return index of pair
+            return diff, n  # return values of pair
         prevValues[n] = i
         
 # Example usage
