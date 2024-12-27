@@ -15,3 +15,7 @@ def find_pair_sum(arr, target):
         else:
             right - 1
     return False
+
+arr = [1, 2, 3, 4, 5, 6, 7]
+target = 9
+print(find_pair_sum(arr, target))
