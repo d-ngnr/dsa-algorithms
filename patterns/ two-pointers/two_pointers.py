@@ -1,6 +1,11 @@
 # Pattern 1: Traversing from both ends
 # Problem: Given a sorted array, find if there exists a pair that sums to target
 
+# Steps:
+# 1. Initialize two pointers, one at the beginning and one at the end of the array
+# 2. Move both pointers towards each other until they meet (while loop)
+# 3. Check if the sum of the values at the pointers is equal to the target
+# 4. Move both pointers in opposite directions until they meet again
 def find_pair_sum(arr, target):
     left = 0
     right = len(arr) - 1
