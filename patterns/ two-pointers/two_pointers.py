@@ -18,9 +18,9 @@ def find_pair_sum(arr, target):
         elif current_sum < target:
             left += 1
         else:
-            right - 1
+            right -= 1
     return False
 
 arr = [1, 2, 3, 4, 5, 6, 7]
-target = 9
+target = 7
 print(find_pair_sum(arr, target))
